@@ -14,16 +14,29 @@ $( ".image-container").append(
 $( ".image-container").append(
   "<article class='home' data-price='20000'><img class='img13' src='https://s-media-cache-ak0.pinimg.com/236x/2d/85/89/2d85894c1defbf8a5690873cfe3fdfe0.jpg' /><h4>$75,000</h4></article>");
 
-// call jQuerry
+// call jQuery
 // add css to <class='img13'> to fit predetermined box sizes
 $('.img13').css( {
   'width' : '150px',
   'height' : '150px',
   });
 
+// call jQuery
+// on click add css to <class='dark'> to change background color
+$('.dark').on('click', function() {
+  $('body').css( {
+    'background' : '#000 url(img/dark_wood.png) repeat'
+  });
+});
+
+// call jQuery
+// on click add css to <class='light'> to change background color
+$('.light').on('click', function() {
+  $('body').css( {
+    'background' : '#000 url(img/tileable_wood_texture.png) repeat'
+  });
+});
 
 
-
-// <span class="dark"></span>
 });
 
