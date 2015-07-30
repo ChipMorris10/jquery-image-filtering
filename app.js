@@ -1,11 +1,13 @@
 $(document).ready(function() {
 	console.log("The document is ready!");
 
+  // ----------- I T E R A T I O N  0 -------------
   // ----------- T A S K  1 -------------
+  // call jQuery
   // find the parent element
   // append/add to insert content
   // added DOM css class to image <class='img13'>
-  // created a new class in order to get proper sizing
+  // created a new class <img13> in order to get proper sizing
   // pulled the images off Google
   $( ".image-container").append(
     "<article class='home' data-price='20000'><img class='img13' src='http://bloximages.chicago2.vip.townnews.com/billingsgazette.com/content/tncms/assets/v3/editorial/2/f4/2f4400ca-ef38-5ae5-9bbf-860471c6b419/5115da0fb6166.preview-620.jpg' /><h4>$90,000</h4></article>");
@@ -19,7 +21,7 @@ $(document).ready(function() {
 
   // ----------- T A S K  2 -------------
   // call jQuery
-  // add css to <class='img13'> to fit predetermined box sizes
+  // add css to <class='img13'> to fit predetermined background box sizes
   $('.img13').css( {
     'width' : '150px',
     'height' : '150px',
@@ -29,7 +31,10 @@ $(document).ready(function() {
   // on click add css to <class='dark'> to change background color
   $('.dark').on('click', function() {
     $('body').css( {
-      'background' : '#000 url(img/dark_wood.png) repeat'
+      'background-color' : '#000',
+      'background-image' : 'url(img/dark_wood.png',
+      'background-repeat' : 'repeat'
+      // // 'background' : '#000 url(img/dark_wood.png repeat'
     });
   });
 
@@ -37,7 +42,10 @@ $(document).ready(function() {
   // on click add css to <class='light'> to change background color
   $('.light').on('click', function() {
     $('body').css( {
-      'background' : '#000 url(img/tileable_wood_texture.png) repeat'
+       'background-color' : '#000',
+       'background-image' : 'url(img/tileable_wood_texture.png',
+       'background-repeat' : 'repeat'
+       // 'background' : '#000 url(img/tileable_wood_texture.png repeat'
     });
   });
 
@@ -57,7 +65,7 @@ $(document).ready(function() {
       'background-color' : '#000',
       'background-image' : 'url(img/forest.jpg',
       'background-repeat' : 'repeat'
-      // 'background' : '#000 url(img/forest.jpg) repeat'
+      // 'background' : '#000 url(img/forest.jpg repeat'
     });
   });
 
@@ -70,12 +78,33 @@ $(document).ready(function() {
 // call jQuery
 // perform background css to the forest image
   $( "span.forest").css( {
-    // 'background' : '#000 url(img/forest.jpg) repeat',
     'background-color' : '#000',
     'background-image' : 'url(img/forest.jpg)',
     'background-repeat' : 'repeat',
     'background-size' : 'contain'
+    // // 'background' : '#000 url(img/forest.jpg repeat'
   });
+
+// ----------- I T E R A T I O N  1 -------------
+  // ----------- T A S K  1 -------------
+// article class="home" data-price="40000"
+// $( ".home" ).attr('data-price')
+// class="image-container"
+
+
+// call jQuery
+// pull values from the DOM with jQuery
+$( ".home" ).attr('data-price');
+
+// push the values into an array
+var homePrices = [];
+var homeArray = $('.home');
+
+
+
+
+
+
 
 
 
