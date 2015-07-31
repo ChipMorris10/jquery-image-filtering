@@ -34,7 +34,7 @@ $(document).ready(function() {
       'background-color' : '#000',
       'background-image' : 'url(img/dark_wood.png',
       'background-repeat' : 'repeat'
-      // // 'background' : '#000 url(img/dark_wood.png repeat'
+      // 'background' : '#000 url(img/dark_wood.png repeat'
     });
   });
 
